@@ -4,6 +4,7 @@
 int _putchar(char c);
 char *_strcat(char *dest, char *src);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
+int main(void);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
 int _strcmp(char *s1, char *s2);
