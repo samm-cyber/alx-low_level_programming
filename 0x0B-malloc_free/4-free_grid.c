@@ -2,7 +2,6 @@
 
 /**
  * free_grid -  free up a 2d array grid
- *
  * @grid: double pointer 2d grid
  * @height: height of grid
  *
@@ -11,13 +10,13 @@
 
 void free_grid(int **grid, int height)
 {
-	if (grid != NULL && height != 0)
+	int i;
+
+	i = 0;
+	while (i < height)
 	{
-		while (height >= 0)
-		{
-			free(grid[height]);
-			height--;
-		}
-		free(grid);
+		free(grid[i]);
+		i++;
 	}
+	free(grid);
 }
